@@ -1,0 +1,1064 @@
+<form>
+
+    <!-- /.box-header -->
+
+    <div class="box-body">
+
+
+        <div class="row" style="margin-bottom:5px;">
+            <div class="col-md-1 col-md-offset-1" style="padding:0px;">Name:</div>
+            <div class="col-md-9"><input type="text" class="form-control" value="MIA SOFIA BINTI MOHD KHAIR" readonly></div>
+        </div>
+        <div class="row" style="margin-bottom:5px;">
+            <div class="col-md-1 col-md-offset-1" style="padding:0px;">tarikh Lahir:</div>
+            <div class="col-md-4"><input type="text" class="form-control" value="27/12/2016" readonly></div>
+        </div>
+
+        <br>
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs myTab" play-item="">
+                <li data-toggle="tooltip" data-placement="top" title="PERKEMBANGAN BAHASA, KOMUNIKASI & LITERASI AWAL" class="">
+                    <a href="#BAHASA" data-toggle="tab">BAHASA</a>
+                </li>
+                <li data-toggle="tooltip" data-placement="top" title="PERKEMBANGAN DERIA DAN PEMAHAMAN DUNIA PERSEKITARAN" class="">
+                    <a href="#DERIA" data-toggle="tab">DERIA</a>
+                </li>
+                <li data-toggle="tooltip" data-placement="top" title="PERKEMBANGAN FIZIKAL" class="">
+                    <a href="#FIZIKAL" data-toggle="tab">FIZIKAL</a>
+                </li>
+                <li data-toggle="tooltip" data-placement="top" title="PERKEMBANGAN KREATIVITI DAN ESTETIKA" class="">
+                    <a href="#KREATIVITI" data-toggle="tab">KREATIVITI</a>
+                </li>
+                <li data-toggle="tooltip" data-placement="top" title="PERKEMBANGAN AWAL MATEMATIK DAN PEMIKIRAN LOGIK" class="">
+                    <a href="#LOGIK" data-toggle="tab">LOGIK</a>
+                </li>
+                <li data-toggle="tooltip" data-placement="top" title="PERKEMBANGAN SAHSIAH SOSIOEMOSI DAN KEROHANIAN" class="">
+                    <a href="#SAHSIAH" data-toggle="tab">SAHSIAH</a>
+                </li>
+                <li style="margin-left:50px;" data-toggle="tooltip" data-placement="top" title="Kesimpulan" class="active">
+                    <a href="#kesimpulan" data-toggle="tab" onclick="loadSummary()">KESIMPULAN</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane " id="BAHASA">
+                    <div class="page-header">
+                        <div class="box-tools pull-right">
+                            <button class="btn btn-success btn-sm" type="button" onclick="alert('Maklumat pencapaian berjaya disimpan');"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Simpan Bahasa</button>
+                            <button class="btn btn-success btn-sm" type="button" onclick="cetak('https://ncdc.upsi.edu.my/develop/institusi/report/146352/912B/BAHASA')"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak Bahasa</button>
+                        </div>
+                        <h3><small>PERKEMBANGAN BAHASA, KOMUNIKASI & LITERASI AWAL</small></h3>
+                    </div>
+                    <table class="table table-hover" id="addChildTbl">
+                        <thead>
+                            <tr class="tbl_head">
+                                <th width="30px">Bil</th>
+                                <th>Perkara</th>
+                                <th width="1%">&nbsp;</th>
+                                <th width="80px" class="text-center">Capai</th>
+                                <th width="135px" class="text-center">Tarikh</th>
+                                <th width="25%" class="text-left">Catatan</th>
+                                <th width="120px" class="text-center">Media</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <font size="3">Melambai “bye-bye”</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="2232483">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'85')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'85')" value="13/12/2017" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'85')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <font size="3">Menghasilkan bunyi da-da atau ma-ma</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'86')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'86')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'86')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <font size="3">Menghasilkan 2-3 perkataan selain ma-ma atau da-da</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'87')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'87')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'87')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <font size="3">Bercakap dalam bahasa yang tidak difahami oleh orang lain (jabbering atau berleter)</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'88')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'88')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'88')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <font size="3">Mengikut arahan mudah (ayat 2-3 patah perkataan) diikuti dengan pergerakan badan</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'89')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'89')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'89')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <font size="3">Memberikan permainan atas arahan</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'90')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'90')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'90')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <hr>
+                    <div class="well well-sm">
+                        <b>Kesimpulan :</b>
+                        <textarea class="form-control" class="form-control" onfocus="catat.setsimpul(this)" onblur="catat.savesimpul(this, 'BAHASA')"></textarea>
+                    </div>
+                </div>
+                <div class="tab-pane " id="DERIA">
+                    <div class="page-header">
+                        <div class="box-tools pull-right">
+                            <button class="btn btn-success btn-sm" type="button" onclick="alert('Maklumat pencapaian berjaya disimpan');"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Simpan Deria</button>
+                            <button class="btn btn-success btn-sm" type="button" onclick="cetak('https://ncdc.upsi.edu.my/develop/institusi/report/146352/912B/DERIA')"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak Deria</button>
+                        </div>
+                        <h1><small>PERKEMBANGAN DERIA DAN PEMAHAMAN DUNIA PERSEKITARAN</small></h1>
+                    </div>
+                    <table class="table table-hover" id="addChildTbl">
+                        <thead>
+                            <tr class="tbl_head">
+                                <th width="30px">Bil</th>
+                                <th>Perkara</th>
+                                <th width="1%">&nbsp;</th>
+                                <th width="80px" class="text-center">Capai</th>
+                                <th width="135px" class="text-center">Tarikh</th>
+                                <th width="25%" class="text-left">Catatan</th>
+                                <th width="120px" class="text-center">Media</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <font size="3">Meneroka pelbagai tekstur objek.</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'342')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'342')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'342')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <font size="3">Membeza pelbagai jenis rasa makanan</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'343')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'343')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'343')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <font size="3">Suka sesetengah makanan pejal</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'344')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'344')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'344')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <font size="3">Menunjukkan reaksi pada bunyi dan muzik yang didengar</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'346')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'346')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'346')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <font size="3">Membezakan pelbagai bunyi di dalam persekitaran.</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'347')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'347')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'347')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <font size="3">Boleh mencari barang yang disembunyikan.</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'348')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'348')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'348')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>
+                                    <font size="3">Meneliti sesuatu objek dengan tangan atau mata.</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'349')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'349')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'349')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>
+                                    <font size="3">Menunjukkan minat kepada objek yang berwarna terang. </font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'351')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'351')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'351')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <hr>
+                    <div class="well well-sm">
+                        <b>Kesimpulan :</b>
+                        <textarea class="form-control" class="form-control" onfocus="catat.setsimpul(this)" onblur="catat.savesimpul(this, 'DERIA')"></textarea>
+                    </div>
+                </div>
+                <div class="tab-pane " id="FIZIKAL">
+                    <div class="page-header">
+                        <div class="box-tools pull-right">
+                            <button class="btn btn-success btn-sm" type="button" onclick="alert('Maklumat pencapaian berjaya disimpan');"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Simpan Fizikal</button>
+                            <button class="btn btn-success btn-sm" type="button" onclick="cetak('https://ncdc.upsi.edu.my/develop/institusi/report/146352/912B/FIZIKAL')"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak Fizikal</button>
+                        </div>
+                        <h1><small>PERKEMBANGAN FIZIKAL</small></h1>
+                    </div>
+                    <table class="table table-hover" id="addChildTbl">
+                        <thead>
+                            <tr class="tbl_head">
+                                <th width="30px">Bil</th>
+                                <th>Perkara</th>
+                                <th width="1%">&nbsp;</th>
+                                <th width="80px" class="text-center">Capai</th>
+                                <th width="135px" class="text-center">Tarikh</th>
+                                <th width="25%" class="text-left">Catatan</th>
+                                <th width="120px" class="text-center">Media</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <font size="3">Berjalan apabila sebelah tangan dipegang</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'91')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'91')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'91')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <font size="3">Mengutip benda dengan menggunakan ibu jari dan jari telunjuk</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'92')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'92')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'92')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <font size="3">Memegang barang dan meneliti barang tersebut dengan tangan atau mata</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'94')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'94')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'94')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <font size="3">Minum menggunakan cawan apabila disuap</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'95')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'95')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'95')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <font size="3">Melepaskan objek</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'96')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'96')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'96')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <font size="3">Membina dua blok</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'97')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'97')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'97')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <hr>
+                    <div class="well well-sm">
+                        <b>Kesimpulan :</b>
+                        <textarea class="form-control" class="form-control" onfocus="catat.setsimpul(this)" onblur="catat.savesimpul(this, 'FIZIKAL')"></textarea>
+                    </div>
+                </div>
+                <div class="tab-pane " id="KREATIVITI">
+                    <div class="page-header">
+                        <div class="box-tools pull-right">
+                            <button class="btn btn-success btn-sm" type="button" onclick="alert('Maklumat pencapaian berjaya disimpan');"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Simpan Kreativiti</button>
+                            <button class="btn btn-success btn-sm" type="button" onclick="cetak('https://ncdc.upsi.edu.my/develop/institusi/report/146352/912B/KREATIVITI')"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak Kreativiti</button>
+                        </div>
+                        <h1><small>PERKEMBANGAN KREATIVITI DAN ESTETIKA</small></h1>
+                    </div>
+                    <table class="table table-hover" id="addChildTbl">
+                        <thead>
+                            <tr class="tbl_head">
+                                <th width="30px">Bil</th>
+                                <th>Perkara</th>
+                                <th width="1%">&nbsp;</th>
+                                <th width="80px" class="text-center">Capai</th>
+                                <th width="135px" class="text-center">Tarikh</th>
+                                <th width="25%" class="text-left">Catatan</th>
+                                <th width="120px" class="text-center">Media</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <font size="3">Menghasilkan bunyi dengan sengaja (seperti mengetuk atau membunyikan loceng)</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'329')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'329')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'329')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <font size="3">Menggerak badan seperti mengangguk apabila mendengar lagu kanak-kanak (nursery rhymes).</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'330')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'330')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'330')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <font size="3">Menyelesaikan masalah secara kreatif (creative problem solving). Contoh: menarik kain untuk untuk mendapat mainan.</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'331')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'331')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'331')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <hr>
+                    <div class="well well-sm">
+                        <b>Kesimpulan :</b>
+                        <textarea class="form-control" class="form-control" onfocus="catat.setsimpul(this)" onblur="catat.savesimpul(this, 'KREATIVITI')"></textarea>
+                    </div>
+                </div>
+                <div class="tab-pane " id="LOGIK">
+                    <div class="page-header">
+                        <div class="box-tools pull-right">
+                            <button class="btn btn-success btn-sm" type="button" onclick="alert('Maklumat pencapaian berjaya disimpan');"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Simpan Logik</button>
+                            <button class="btn btn-success btn-sm" type="button" onclick="cetak('https://ncdc.upsi.edu.my/develop/institusi/report/146352/912B/LOGIK')"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak Logik</button>
+                        </div>
+                        <h1><small>PERKEMBANGAN AWAL MATEMATIK DAN PEMIKIRAN LOGIK</small></h1>
+                    </div>
+                    <table class="table table-hover" id="addChildTbl">
+                        <thead>
+                            <tr class="tbl_head">
+                                <th width="30px">Bil</th>
+                                <th>Perkara</th>
+                                <th width="1%">&nbsp;</th>
+                                <th width="80px" class="text-center">Capai</th>
+                                <th width="135px" class="text-center">Tarikh</th>
+                                <th width="25%" class="text-left">Catatan</th>
+                                <th width="120px" class="text-center">Media</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <font size="3">Mengenali pelbagai saiz, warna dan bentuk sesuatu objek dalam persekitaran.</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'323')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'323')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'323')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <font size="3">Memahami konsep kedalaman (depth perception) dengan menunjukkan rasa takut jatuh dari tempat tinggi.</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'324')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'324')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'324')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <font size="3">Meneliti objek dan menjatuhkan objek ke lantai berulang kali.</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'325')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'325')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'325')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <font size="3">Cuba memadan bentuk dengan acuan.</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'326')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'326')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'326')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <font size="3">Menggunakan objek untuk aktiviti yang bersesuaian.</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'327')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'327')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'327')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <font size="3">Memahami simbol seperti sudu untuk makan, botol untuk menyimpan susu.</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'328')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'328')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'328')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>
+                                    <font size="3">Mencari barang yang disembunyikan dipelbagai tempat.</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'332')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'332')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'332')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <hr>
+                    <div class="well well-sm">
+                        <b>Kesimpulan :</b>
+                        <textarea class="form-control" class="form-control" onfocus="catat.setsimpul(this)" onblur="catat.savesimpul(this, 'LOGIK')"></textarea>
+                    </div>
+                </div>
+                <div class="tab-pane " id="SAHSIAH">
+                    <div class="page-header">
+                        <div class="box-tools pull-right">
+                            <button class="btn btn-success btn-sm" type="button" onclick="alert('Maklumat pencapaian berjaya disimpan');"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Simpan Sahsiah</button>
+                            <button class="btn btn-success btn-sm" type="button" onclick="cetak('https://ncdc.upsi.edu.my/develop/institusi/report/146352/912B/SAHSIAH')"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak Sahsiah</button>
+                        </div>
+                        <h1><small>PERKEMBANGAN SAHSIAH SOSIOEMOSI DAN KEROHANIAN</small></h1>
+                    </div>
+                    <table class="table table-hover" id="addChildTbl">
+                        <thead>
+                            <tr class="tbl_head">
+                                <th width="30px">Bil</th>
+                                <th>Perkara</th>
+                                <th width="1%">&nbsp;</th>
+                                <th width="80px" class="text-center">Capai</th>
+                                <th width="135px" class="text-center">Tarikh</th>
+                                <th width="25%" class="text-left">Catatan</th>
+                                <th width="120px" class="text-center">Media</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <font size="3">Makan sendiri dengan menggunakan tangan</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'82')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'82')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'82')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <font size="3">Menunjukkan kasih sayang</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'83')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'83')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'83')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <font size="3">Suka apabila diperhatikan (mengulang sesuatu yang diberi perhatian)</font>
+                                </td>
+                                <td>
+
+                                    <br>
+
+                                </td>
+                                <td class="text-center">
+                                    <input type="hidden" name="resid" value="">
+                                    <button type="button" value="0" class="btn btn-default btn-lg" onclick="setCapai(this,'84')"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+                                </td>
+                                <td class="text-center" style="position:relative;">
+                                    <input type="text" class="form-control date" onfocus="tarikh.set(this)" onblur="tarikh.save(this,'84')" value="" disabled>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" onfocus="catat.set(this)" onblur="catat.save(this,'84')" disabled></textarea>
+                                </td>
+                                <td class="text-center">
+                                    <div><button type="button" class="upload btn btn-default" onclick="upload.show(this)" disabled><i class="fa fa-fw fa-cloud-upload"></i> Muatnaik</button></div>
+                                    <div style="margin-top:5px;"><a href="javascript:void(0);" onclick="image.show(this)"><span id="mediaCount">0</span> Media</a></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <hr>
+                    <div class="well well-sm">
+                        <b>Kesimpulan :</b>
+                        <textarea class="form-control" class="form-control" onfocus="catat.setsimpul(this)" onblur="catat.savesimpul(this, 'SAHSIAH')"></textarea>
+                    </div>
+                </div>
+                <div class="tab-pane active" id="kesimpulan"></div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="overlay" style="display:none;">
+        <center><br>Saving...<i class="fa fa-refresh fa-spin"></i></center>
+    </div>
+    </div>
+    </div>
+    </div>
+</form>
